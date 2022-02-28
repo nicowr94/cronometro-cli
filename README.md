@@ -1,4 +1,4 @@
-# Frontend - Disney
+# Frontend - Cronometro
 Aplicativo que permite almacenar tiempos al utilizar el cronometro integrado. Se puede pausear el cronometro y darle continuar las veces que sea necesario, estas marcas en el conteo son almacenados en PostgreSQL y mostrado en "ver más"
 
 ### Se utilizó
