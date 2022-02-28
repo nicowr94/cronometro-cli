@@ -1,0 +1,13 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/mixins.scss";
+
+.a-card_mark {
+  display: flex;
+  gap: 1rem;
+  border-bottom: 1px solid $border;
+  height: 30px;
+  align-items: center;
+  &__index {
+    width: 20px;
+  }
+}

@@ -1,0 +1,88 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/mixins.scss";
+.a-card-time__container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 1rem;
+  gap: 2rem;
+  border-bottom: 1px solid $border;
+  align-items: center;
+  &__description {
+    display: flex;
+    gap: 2rem;
+    &__about {
+      display: flex;
+      gap: 2rem;
+      &__timeago {
+        width: 130px;
+        @include from($small) {
+          text-align: end;
+        }
+      }
+      @include from($small) {
+        gap: 1rem;
+        width: 100%;
+        justify-content: space-between;
+      }
+      @include from($medium) {
+        align-items: center;
+        width: 100%;
+      }
+    }
+
+    &__dates {
+      display: flex;
+      gap: 2rem;
+      @include from($medium) {
+        gap: 1rem;
+        flex-direction: column;
+        width: 100%;
+      }
+      @include from($small) {
+        flex-direction: row;
+        justify-content: flex-end;
+        text-align: end;
+      }
+    }
+
+    @include from($large) {
+      gap: 1rem;
+    }
+    @include from($small) {
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+
+  &__options {
+    display: flex;
+    gap: 2rem;
+    p {
+      width: 4rem;
+      @include from($medium) {
+        width: 2.75rem;
+      }
+      @include from($small) {
+        width: 4rem;
+      }
+    }
+    &__ver-mas {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+    @include from($small) {
+      justify-content: flex-end;
+      background: #e2e2e2;
+      width: 100%;
+    }
+  }
+
+  @include from($large) {
+    gap: 1rem;
+  }
+
+  @include from($small) {
+    flex-direction: column;
+  }
+}

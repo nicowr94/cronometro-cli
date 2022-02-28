@@ -1,0 +1,15 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/mixins.scss";
+
+.m-list-time__container {
+  max-width: 800px;
+  margin: auto;
+  @include from($large) {
+    max-width: 600px;
+  }
+
+  @include from($small) {
+    max-width: 400px;
+    margin: 0 20px;
+  }
+}

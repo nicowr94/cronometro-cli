@@ -1,0 +1,12 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/mixins.scss";
+.a-watch {
+  text-align: center;
+  color: black;
+  font-size: 6rem;
+  font-family: monospace;
+  @include from($small) {
+    gap: 1rem;
+    font-size: 3.75rem;
+  }
+}
